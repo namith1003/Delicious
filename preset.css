@@ -1,86 +1,25 @@
-/*Rounded corners and square hover buttons*/
-.cardContent-button, 
-.cardContent-shadow, 
-.itemDetailImage, 
-.cardOverlayButton-hover, 
-.cardOverlayContainer,
-.listItemImage,
-.listItemImageButton,
-.listItemButton,
-.headerButton,
-.paper-icon-button-light
-{border-radius: 6px;}
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/jf_font.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fixes.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/base.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/accentlist.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/smallercast.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/episodelist/episodes_compactlist.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/header/header_transparent-dashboard.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/login/login_frame.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fields/fields_noborder.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_corner.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/colorful.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_simple.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/overlayprogress.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/hoverglow.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/glassy.css');
 
-/*Minimalistic play buttons*/
-.listItemImageButton-icon {padding: 0;}
-.cardOverlayFab-primary {background-color: #00000000;}
-.cardOverlayButtonIcon {background-color: #00000000 !important;}
 
-/*Theme some dialogues*/
-.dialog {border-radius: 6px !important; background-color: rgba(0, 0, 0, 0.9);}
-.actionSheetMenuItem:hover {background-color: rgba(0, 164, 220, 0.2);}
-.mainDrawer {background-color: rgba(0, 0, 0, 0.9);}
-.navMenuOption:hover {background: rgba(0, 164, 220, 0.2);}
 
-/*Tweak entry fields*/
-.selectContainer {margin-right: 1em !important;}
-.emby-input, .emby-textarea, .emby-select-withcolor 
-{background: rgba(0, 0, 0, 0.4); border: 0.01em solid rgba(255, 255, 255, 0.22); border-radius: 6px;}
-.emby-input:focus, .emby-textarea;focus, .emby-select-withcolor:focus 
-{background: rgba(0, 0, 0, 0.8); border: 0.01em solid #00a4dcc2 !important;}
+:root {--rounding: 12px;}
 
-/*Make the red checkmark and likes blue like everything else*/
-.playstatebutton-icon-played, .ratingbutton-icon-withrating {color: #00a4dc;}
-
-/*Tweak series/movie/album/episode title screen*/
-.detailSticky {background: rgba(0, 0, 0, 0) !important; margin-top: 0 !important;}
-.itemBackdrop::after {background-color: rgba(0, 0, 0, 0) !important;}
-.itemBackdrop {height: 0; background-image: none !important;}
-.detailImageContainer {margin-top: -120px;}
-.detailButtonHideonMobile {display: inline !important;}
-.detailFloatingButton {display: none !important;}
-.detailLogo {display: none;}
-.detailPageWrapperContainer {margin-top: 7.5vw;}
-.innerCardFooter {border-radius: 6px;}
-
-/*Remove a bugged progress indicator on episode view page*/
-.detailImageProgressContainer {display: none;}
-
-/*Size episode preview images in a more compact way*/
-.listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}
-.listItem-content {height: 115px;}
-.secondary.listItem-overview.listItemBodyText {height: 61px; margin: 0;}
-.listItemImageButton {margin: auto; font-size: 1.6em !important;}
-
-/*Narrow the login form, size according to display size (bigger on mobile)*/
-#loginPage .readOnlyContent, #loginPage form {max-width: 22em;}
-
-/*Hide "please login" text, margin is to prevent login form moving too far up*/
-#loginPage h1 {display: none}
-#loginPage .padded-left.padded-right.padded-bottom-page {margin-top: 50px}
-
-/*Hide "manual" and "forgot" buttons*/
-#loginPage .raised.cancel.block.btnManual.emby-button {display: none}
-#loginPage .raised.cancel.block.btnForgotPassword.emby-button {display: none}
-
-/*Login background*/
-#loginPage {background: url(https://enter.a/url/to/a/picturefile/here.jpg) !important; background-size: cover !important;}
-
-/*Shrink and square (or round) cast thumnails*/
-#castContent .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {width: 4.2cm !important; font-size: 90% !important;}
-#castContent .card.overflowPortraitCard.personCard.card-withuserdata {width: 4.2cm !important; font-size: 90% !important;}
-
-/*Correct image aspect ratio behaviour, set border-radius to zero for square tiles, something high for round ones, inbetweeny for rounded squares*/
-#castContent .cardContent-button.cardImageContainer.coveredImage.cardContent.cardContent-shadow.itemAction.lazy, #castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground1.cardContent.cardContent-shadow.itemAction, #castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground2.cardContent.cardContent-shadow.itemAction, #castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground3.cardContent.cardContent-shadow.itemAction, #castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground4.cardContent.cardContent-shadow.itemAction, #castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground5.cardContent.cardContent-shadow.itemAction {background-size: cover; !important; border-radius: 6px;}
-#castContent .cardScalable {width:  3.8cm !important; height: 3.8cm !important; border-radius: 6px;}
-#castContent .cardOverlayContainer.itemAction {border-radius: 6px;}
-
-/*Add this if using completely round icons, it centers the threedot button*/
-#castContent .cardOverlayButton-br {bottom: 4%; right: 15%; width: 70%;}
-#castContent .cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light {margin:auto;}
-
-/*Make watched icon dark and transparent*/
-.playedIndicator {background: #00000058; box-shadow: none;}
-.countIndicator {box-shadow: none;}
-
-.backgroundContainer {background-color: #080808;}
+/*Style backdrop*/
+.backdropImage {
+  filter: blur(18px) saturate(120%) contrast(120%) brightness(40%);
+}
