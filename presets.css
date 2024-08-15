@@ -1,61 +1,27 @@
-@import url('https://cdn.jsdelivr.net/gh/namith1003/Delicious/presets.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/jf_font.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fixes.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/base.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/accentlist.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/smallercast.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/episodelist/episodes_compactlist.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/header/header_transparent-dashboard.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/login/login_frame.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fields/fields_noborder.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_corner.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/colorful.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_simple.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/overlayprogress.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/hoverglow.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/glassy.css');
+@import url('https://cdn.jsdelivr.net/gh/namith1003/Delicious/assets/logo_name.css');
 
-/*Tweak series/movie/album title screen*/
 
-.detailSectionContent {
-  max-width: 66em;
-}
-.trackSelections {
-  max-width: 22em;
-}
-.detailLogo {
-  display: none;
-}
-.detailPagePrimaryContainer {
-  background: rgba(0,0,0,0) !important;
-}
-.layout-desktop .detailRibbon {
-  background: rgba(0,0,0,0) !important;
-}
+:root {--rounding: 12px;}
 
-/* Fix poster image not showing in high width windows */
-.layout-desktop .detailImageContainer .card {
-  top: 18vh;
-}
-
-@media all and (min-width: 32em){
-  .itemBackdrop {
-    display: none;
-  }
-	.layout-desktop .detailRibbon {
-    margin-top: 13vh;
-	}
+/*Style backdrop*/
+.backdropImage {
+  filter: blur(18px) saturate(120%) contrast(120%) brightness(40%);
 }
 
-#itemDetailPage .detailLogo {
-    position: static;
-    margin-left: 32.5%;
-    display: block;
-    -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
-    /*! filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75)); */
-    flex-shrink: 0;
-    background-position: 0 50%;
-    margin-top: 8vh;
-    margin-bottom: -12vh;
-}
 
-.layout-mobile .detailLogo {
-    display: none !important;
-}
-
-.hide+.detailPageWrapperContainer .itemName {
-    display: block !important;
-}
-
-.itemName {
-    margin: .5em 0 !important;
-}
-
-.layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
-    display: block;
-}
