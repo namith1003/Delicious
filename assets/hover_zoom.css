@@ -1,0 +1,8 @@
+.homeLibraryButton:hover,
+.homeLibraryButton:focus,
+.card:hover,
+.card:focus {
+  transform: scale(1.05) !important;
+  -webkit-filter: none !important;
+  filter: none !important;
+}
