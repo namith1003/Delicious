@@ -1,0 +1,13 @@
+.homeLibraryButton,
+.card {
+  transition: transform 0.1s ease-in-out, filter 0.1s ease-in-out; /* Smooth transition for both transform and filter */
+}
+
+.homeLibraryButton:hover,
+.homeLibraryButton:focus,
+.card:hover,
+.card:focus {
+  transform: scale(1.05) !important;
+  -webkit-filter: none !important;
+  filter: none !important;
+}
