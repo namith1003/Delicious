@@ -18,12 +18,5 @@
     left: -10% !important;
     margin-top: 0 !important;
 }
-/* Fix for header buttons */
-.layout-desktop .emby-button-foreground {
-    top: -9px !important;
-}
-.layout-tv .emby-button-foreground {
-    top: -14px !important;
-}
 
 
