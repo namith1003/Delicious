@@ -1,9 +1,0 @@
-/* Reserve space for the scrollbar to prevent page shift */
-html {
-    overflow-y: scroll;
-}
-
-body {
-    /* Ensure body content doesn't shift when the scrollbar disappears */
-    overflow: overlay;
-}
