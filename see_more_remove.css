@@ -1,0 +1,11 @@
+/* Hide the "See More" button */
+.overview-controls .overview-expand {
+  display: none !important;
+}
+
+/* Ensure the full description is visible */
+.detailSectionContent .overview.detail-clamp-text {
+  max-height: none !important; /* Remove height restriction */
+  overflow: visible !important; /* Make sure it is not cut off */
+  display: block !important; /* Ensure it is displayed */
+}
