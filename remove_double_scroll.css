@@ -1,0 +1,12 @@
+/* Override overflow-y to initial for specific pages */
+#indexPage,
+#moviesPage,
+#tvRecommendedPage,
+#musicRecommendedPage {
+  overflow-y: initial !important;
+}
+
+/* If you need to ensure .force-scroll is also overridden */
+.force-scroll {
+  overflow-y: initial !important;
+}
