@@ -1,0 +1,45 @@
+/* Apply rounded box to buttons within headerLeft only */
+.headerLeft button {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  border-radius: 12px; /* Rounded corners */
+  padding: 12px; /* Padding inside the button */
+  margin: 0 4px; /* Space between buttons */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  border: none; /* Remove default border */
+}
+
+/* Adjust for button hover state */
+.headerLeft button:hover {
+  background: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+/* Ensure buttons in headerLeft are positioned correctly */
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+/* Ensure the header sections have a contained rounded box */
+.headerRight {
+  display: flex;
+  align-items: center; /* Align buttons vertically */
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  border-radius: 12px; /* Rounded corners */
+  padding: 5px; /* Padding inside the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+
+.headerRight {
+  margin-left: 10px; /* Space to the left of the right container */
+}
+
+/* Ensure that headerTop aligns items properly */
+.headerTop {
+  display: flex;
+  align-items: center; /* Center align items vertically */
+  justify-content: space-between; /* Space between left and right containers */
+}
+
