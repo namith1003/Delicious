@@ -1,12 +1,16 @@
-/* Override overflow-y to initial for specific pages */
-#indexPage,
-#moviesPage,
-#tvRecommendedPage,
-#musicRecommendedPage {
-  overflow-y: initial !important;
+/* Hide scrollbar by default */
+::-webkit-scrollbar {
+    display: none;
 }
 
-/* If you need to ensure .force-scroll is also overridden */
-.force-scroll {
-  overflow-y: initial !important;
+/* Force second scrollbar to be hidden */
+.transparentDocument {
+    scrollbar-width: none !important; /* Hide scrollbar in Firefox */
+}
+
+
+
+/*To completely remove scroll bar from whole jellyfin*/
+* {
+  scrollbar-width: none !important; /* Hide scrollbar in Firefox */
 }
