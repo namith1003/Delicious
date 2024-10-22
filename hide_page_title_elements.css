@@ -1,0 +1,4 @@
+/* Hide all elements with class "pageTitle" */
+.pageTitle {
+  display: none;
+}
