@@ -1,0 +1,6 @@
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.semiTransparent {
+  background-color: transparent !important; /* Sets the background to fully transparent */
+  opacity: 1 !important; /* Ensures that the element itself is fully opaque */
+  /* Optionally, you might want to ensure no other styles are applied */
+  box-shadow: none !important; /* Example to remove any shadows */
+}
